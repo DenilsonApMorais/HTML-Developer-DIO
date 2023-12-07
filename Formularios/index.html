@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form  name="signup" method="post" action="para onde o formulário vai " autocomplete="on" onsubmit="alert('Enviei o arquivo!')" id="cadastro">
+        Nome: <input type="text" name="name" required><br>
+        Idade:  <input type="number" name="age" placeholder="numero inteiro"  autofocus><br>
+        <!--o autofocus permite começar com o campo já selecionado já o placeholder aparece uma dica.-->
+        Senha: <input type="password" name="password" id="password" required><br>
+      <input type="submit"  value="Entrar" id="btnEntrar">
+
+    </form>
+    <p>Agora podemos ter o campo input fora de um form basta acrescentar um id no form e referecia-lo no input usando a tag <code>form = "id_form"</code></p>
+    <input type="text" form="cadastro" required placeholder="#" >
+    <p>para permitir que o usuário edite algo na pagina colocamos o campo desejado como <code>editable</code></p>
+    <p>utilise classe pra editar CSS não usar id </p>
+
+</body>
+</html>

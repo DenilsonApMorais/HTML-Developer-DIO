@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            display: inline; /*podemos ter elementos um na frente do outro mas não aceita width e height (aceita margin e padding)*/ 
+            margin: 20px 20px;
+            padding: 20px 20px;
+            background-color: lightgray;
+        }
+        .div2{
+            display: inline-block;  /* Podemos ter elementos um na frente do outro e (aceita width e height)*/
+            margin: 20px 20px;
+            padding: 20px 20px;
+           
+            background-color:lightblue;
+        }
+        .div3{
+            display: block;  /* cada elemento em uma linha (aceita width e height)*/
+            background-color:lightgreen;
+            width:200px;
+            height:60px;
+        }
+        
+        .div4{
+            display: inline-block;/* cada elemento em uma linha (aceita width e height)*/
+            position:relative;  /*agora podemos deslocar o objeto em relação a sua posição original*/
+            top: 40px;  /*desloca 40 pixels do topo considerando o local original*/
+            left: 50px; /*desloca 50 pixels do esquerda considerando o local original*/
+            background-color:lightgreen;
+        }
+        .div5{
+            display: inline-block;
+            position: absolute; /*agora este elemento será posicionado em relação a pagina html e não irá considerar os outros elementos*/
+            background-color:pink;
+            width: 600px;
+            height:200px;
+            top: 10px;
+            opacity: 20%;
+            border: 1px solid black;
+
+        }
+        /* para que um objeto interno acompanhe o posicionamento de outro mais exerno o externo deve ter posição relativa e o interno absoluta*/
+        .div6{
+            position: relative;
+            border: 1px solid black;
+            background-color: aquamarine;
+            width: 400px;
+            height: 1400px;
+            top: 100px;
+            left: 200px;
+        }
+        .objInterno{
+            position: absolute; 
+            background-color: gold;
+            top: 0px;
+            right: 0px;
+            
+        }
+        .div7{
+            background-color: burlywood;
+            position: fixed; /*este elemento ficará fixo até quando a tela for scrollada*/
+            bottom: 0;
+            right: 0; 
+            padding: 20px;
+        }
+        .div8{
+            display: inline-block;
+            position: sticky;
+            background-color: lightseagreen;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="div1">
+        elemento 01
+    </div>
+    <div class="div2">
+        elemento 02
+    </div>
+    <div class="div4">
+        elemento 04
+    </div>
+    <div class="div3">
+        elemento 03
+    </div>
+    <div class="div5">
+        elemento 5
+    </div>
+    <div class="div8">
+        elemento 8
+    </div>
+   <div class="div6">
+        elemento6 
+        <div class="objInterno">
+            bloco interno
+    </div>
+   </div>
+   <div class="div7">
+    elemento 7
+   </div>
+   
+   
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+
+    <form action="" method="get">
+
+        <input type="radio" name="aceita" value="sim">Sim <br>
+        <input type="radio" name="aceita" value="não">Não <br>
+        <p>Radio button precisa ter o mesmo name pra aceitar apenas uma opção</p>
+        <hr>
+        <input type="checkbox" name="opcao[]" value="Carro">Carro <br>
+        <input type="checkbox" name="opcao[]" value="Moto">Moto <br>
+        <input type="checkbox" name="opcao[]" value="Barco">Barco <br>
+        <input type="checkbox" name="opcao[]" value="Caminhão">Caminhão <br>
+       
+        <p>colocamos o name como lista "opcao[]" para aceitar mais e enviar mais de um valor.</p>
+
+        <h3>Lista de seleção de profissão</h3>
+        <label>Nome:</label>
+        <input type="text" name="name"><br>
+        <br>
+        <label>Profissão</label>
+        <select name="Cargo">
+            <option value="selecione" selected>Selecione o Cargo </option>
+            <option value="Engenheiro">Engenheiro</option>
+            <option value="professor">Professor</option>
+            <option value="Mecânico">Mecânico</option>
+        </select><br>
+        <hr>
+        <label>Mensagem:</label><br>
+        <textarea name="msg" id="id_Msg" cols="30" rows="10"></textarea> <br>
+        <button type="submit" name="enviar">Enviar</button>
+
+    </form>
+    
+</body>
+</html>
